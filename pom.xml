@@ -67,10 +67,10 @@
 	<version.org.jboss.as>7.5.0.Final-redhat-21</version.org.jboss.as>
         <!--  RiftSaw -->
         <version.activity.monitor.model>1.2.2.Final</version.activity.monitor.model>
-        <version.overlord-commons>2.0.2.Final</version.overlord-commons>
+        <version.overlord-commons>2.0.11.Final</version.overlord-commons>
         <version.riftsaw.ode>3.2.0.Final</version.riftsaw.ode>
-        <version.riftsaw.engine>3.2.0.Final</version.riftsaw.engine>
-        <version.riftsaw.console>2.4.6.Final</version.riftsaw.console>
+        <version.riftsaw.engine>3.2.2.Final</version.riftsaw.engine>
+        <version.riftsaw.console>2.4.8.Final</version.riftsaw.console>
         <!-- Remove when RiftSaw upgrades to net.sf.saxon:Saxon-HE:9.5.1-2  -->
         <version.net.sourceforge.saxon>9.2.1.5</version.net.sourceforge.saxon>
         <!-- KIE/Drools/jBPM: these should all match -->
