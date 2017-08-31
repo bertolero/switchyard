@@ -155,6 +155,40 @@
                 <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
+        <repository>
+            <id>ea-public-release-repository-group</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/ea/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>releases-public-release-repository-group</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+          <id>gradle-artifactory-repo</id>
+          <url>http://gradle.artifactoryonline.com/gradle/libs/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
