@@ -219,13 +219,15 @@
 				dir="res/overlord-commons" >
 			<property name="overlord-commons.appserver.dir" value="${EAP_PATH}" />
 			<property name="overlord-commons.idp.file" value="${basedir}/res/overlord-commons/overlord-commons-idp-eap6.war" />
+			<property name="overlord-commons.eap-dist.file" value="${basedir}/res/overlord-commons/overlord-commons-dist-eap6.zip" />
 			<property name="overlord-commons.services.file" value="${basedir}/res/overlord-commons/overlord-commons-services.jar" />
+			<property name="overlord-commons.codec.file" value="${basedir}/res/overlord-commons/overlord-commons-codec.jar" />
 			<property name="overlord-commons.auth.file" value="${basedir}/res/overlord-commons/overlord-commons-auth.jar" />
 			<property name="overlord-commons.auth.jboss7.file" value="${basedir}/res/overlord-commons/overlord-commons-auth-jboss7.jar" />
 			<property name="overlord-commons.auth.tomcat7.file" value="${basedir}/res/overlord-commons/overlord-commons-auth-tomcat7.jar" />
 		    <property name="overlord-commons.ant.jar" value="${basedir}/res/overlord-commons/overlord-commons-ant.jar" />
 			<!-- Temporary workaround - version needs to be correct in the called ant script -->
-			<property name="overlord-commons.version" value="2.0.2.Final" />
+			<property name="overlord-commons.version" value="2.0.19.Final" />
 			
 		</ant>
 
@@ -265,8 +267,10 @@
         <unjar src="res/overlord-commons-installer.jar" dest="res/overlord-commons" overwrite="true"/>
 
         <echo>Retrieve Overlord Commons Artifacts ...</echo>
-        <get src="${overlord-commons-idp-eap6.url}" dest="res/overlord-commons/overlord-commons-idp-eap6.war"/>
+    	<get src="${overlord-commons-idp-eap6.url}" dest="res/overlord-commons/overlord-commons-idp-eap6.war"/>
+		<get src="${overlord-commons-dist-eap6.url}" dest="res/overlord-commons/overlord-commons-dist-eap6.zip"/>
         <get src="${overlord-commons-services.url}" dest="res/overlord-commons/overlord-commons-services.jar"/>
+		<get src="${overlord-commons-codec.url}" dest="res/overlord-commons/overlord-commons-codec.jar"/>
         <get src="${overlord-commons-auth.url}" dest="res/overlord-commons/overlord-commons-auth.jar"/>
         <get src="${overlord-commons-auth-jboss7.url}" dest="res/overlord-commons/overlord-commons-auth-jboss7.jar"/>
         <get src="${overlord-commons-auth-tomcat7.url}" dest="res/overlord-commons/overlord-commons-auth-tomcat7.jar"/>
